@@ -1,2 +1,1 @@
-# attention_is_all_you_need
-# attention_is_all_you_need
+implementing whole transformer architecture in pytorch
