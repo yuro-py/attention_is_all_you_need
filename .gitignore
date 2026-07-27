@@ -1,5 +1,2 @@
 .venv/
-tf.py
-.t.py.swp
 .envrc
-.gitignore
