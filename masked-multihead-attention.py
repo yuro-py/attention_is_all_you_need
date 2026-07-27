@@ -1,3 +1,5 @@
+# MASKED MULTI-HEAD ATTENTION
+
 import torch, torch.nn as nn, torch.nn.functional as F
 
 x = torch.randn([1, 6, 512])
@@ -15,8 +17,10 @@ v = v.reshape(B, T, h, hd).transpose(1,2)
 
 scores = q @ k.transpose(-2, -1)
 
+#------MASKING------
 mask = torch.triu(torch.ones(T, T), diagonal=1).bool()
 scores = scores.masked_fill(mask, float("-inf"))
+#-------------------
 
 weights = F.softmax(scores, dim=-1) @ v
 
