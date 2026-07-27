@@ -5,3 +5,5 @@ main file for this repo is:-
 # transformer.py
 
 rest all others are practice/experiments.
+
+[TF is a Transformer? - Blog Post](https://yuro-py.blogspot.com/2026/07/tf-is-transformer-transformers2007.html)
